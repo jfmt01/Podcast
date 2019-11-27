@@ -1,0 +1,134 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Podcast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html"><img src="assets/logo.svg" alt=""></a></li>
+            <li class="nav"><a href="#episodios">Episodios</a></li>
+            <li class="nav"><a href="#nosotros">Nosotros</a></li>
+            <li class="nav"><a href="#entrevistas">Entrevistas</a></li>
+            <li class="nav"><a href="#topicos">Topicos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Hello pale blue dot</h1>
+        <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
+            jueves cada 15 días.
+        </p>
+        <button onclick="myFunction()" class="button">Conoce más</button>
+    </header>
+
+    <section id="episodios">
+        <div class="ep">
+            <h2>Episodios</h2>
+            <div class="ep_img">
+                <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="584"
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/6gkdorAGDybWLDTk36BARG" width="584"
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/1bAOgKX9meI7LXvmhPvNIO" width="584"
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/1LaCr5TFAgYPK5qHjP3XDp" width="584"
+                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="about">
+            <img src="assets/phone.png" alt="Phone">
+            <div class="text_nos">
+                <h2>¿De dónde venimos?</h2>
+                <p>
+                    Nuestras posturas, nuestra importancia personal imaginada, el engaño de que tenemos una posición
+                    privilegiada en el Universo, se ven desafiados por este punto de luz pálida.
+                    Nuestro planeta es una mota solitaria en la gran oscuridad cósmica envolvente. En nuestra oscuridad,
+                    en toda esta inmensidad, no hay indicios de que venga ayuda de otro lugar para salvarnos de nosotros
+                    mismos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="entrevistas">
+        <div class="interviews">
+            <h2>Entrevistas</h2>
+            <p>No te pierdas de las mejores entrevistas a personajes destacados en ciencia y tecnología, sobre los temas
+                más relevante del ahora y el futuro.</p>
+        </div>
+
+        <div class="slider" id="slider">
+            <ul>
+                <li><img id="banner_dua" src="assets/grace-hopper.png"></li>
+                <li><img id="img1" src="assets/Katie-Bouman.png"></li>
+                <li><img id="img2" src="assets/Margaret_Hamilton.png"></li>
+                <li><img id="img3" src="assets/An E.R.A.Univac 1103 computer in the 1950s.png"></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="topicos">
+        <div class="temas">
+            <div class="topics">
+                <img class="t_img" src="assets/icon1.svg" alt="">
+                <div class="descrip">Trabajo remoto</div>
+            </div>
+
+            <div class="topics">
+                <img src="assets/icon2.svg" alt="">
+                <div class="descrip">Repensando la programación</div>
+            </div>
+
+            <div class="topics">
+                <img src="assets/icon3.svg" alt="">
+                <div class="descrip">Bases del código</div>
+            </div>
+
+            <div class="topics">
+                <img src="assets/icon4.svg" alt="">
+                <div class="descrip">Seguridad informática</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner">
+        <p>¿Quieres las últimas novedades?</p>
+        <button onclick="myFunction()" id="button_d" class="button"><a href="#episodios"></a> Escucha los
+            episodios</button>
+    </div>
+
+    <div class="home">
+        <a href="#nav"><img id="home" src="assets/home4.png" alt=""></a>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+            alert("Mantente conectado, próximamente cargaremos nuevos podcast");
+        };
+
+        var Topics;
+
+        Topics = prompt("¿Cuáles son tus temas de interés?");
+
+        document.write("Seleccionaste " + Topics + " como tema de interés");
+
+        console.log(Topics);
+    </script>
+</body>
+
+</html>
