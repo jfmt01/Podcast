@@ -1,0 +1,140 @@
+/* .hamburguer {
+  width: 320px;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: space-around;
+  background: #0000ec 100%;
+
+  a {
+    padding: 5%;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+}
+ */
+
+.nav ul {
+  margin: 0%;
+  list-style: none;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.nav li a {
+  color: white;
+  display: block;
+  padding: 5%;
+  padding-bottom: 5%;
+  text-decoration: none;
+}
+.nav li a:hover,
+.nav .menu-btn:hover {
+  color: #060a24;
+  &:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+  }
+  &:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
+  }
+}
+.nav .logo {
+  display: block;
+  float: left;
+  padding: 2%;
+  text-decoration: none;
+}
+.nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  font-size: 20px;
+  background: #0000ec;
+}
+.nav .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 25px 18px;
+  position: relative;
+  user-select: none;
+}
+.topnav-right {
+  float: right;
+}
+.nav .menu-icon .navicon {
+  background: #333333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.nav .menu-icon .navicon:before,
+.nav .menu-icon .navicon:after {
+  background: #333333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+.nav .menu-icon .navicon:before {
+  top: 5px;
+}
+.nav .menu-icon .navicon:after {
+  top: -5px;
+}
+.nav .menu-btn {
+  display: none;
+}
+.nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media (min-width: 1024px) {
+  .nav li {
+    float: left;
+  }
+  .nav {
+    .menu {
+      background: none;
+      clear: none;
+      float: right;
+      max-height: none;
+      li a {
+        color: #060a24;
+        &:hover {
+          color: #00f3bb;
+          text-decoration: line-through;
+        }
+        &:active {
+          color: rgba(6, 10, 36, 0.56);
+          text-decoration: line-through;
+        }
+      }
+    }
+    li a {
+        padding: 20px 30px;
+      }
+  }
+
+  .nav .menu-icon {
+    display: none;
+  }
+}
