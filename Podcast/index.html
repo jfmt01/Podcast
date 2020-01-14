@@ -5,62 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Podcast</title>
+    <meta name="author" content="Fernando Moreno Tovar">
+    <meta name="description" content="technology podcast web platform">
+    <title>DevCast Pale Blue Dot</title>
+    <link rel="icon" type="image/svg" href="assets/images/logo.svg">
     <link rel="stylesheet" href="assets/styles/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet"
-        type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <nav class="nav" id="nav">
-        <ul>
-            <a href="index.html"><img class="logo" src="assets/images/logo.svg" alt=""></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <div class="topnav-right">
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            </div>
-            <ul class="menu">
-                <li class="nav"><a href="#episodios">Episodios</a></li>
-                <li class="nav"><a href="#nosotros">Nosotros</a></li>
-                <li class="nav"><a href="#entrevistas">Entrevistas</a></li>
-                <li class="nav"><a href="#topicos">Tópicos</a></li>
-            </ul>
-        </ul>
-    </nav>
-
     <header>
-        <h1>Hello <span class="world">world</span> pale blue dot</h1>
-        <p>El portal de podcasts que explora el mundo de la programación. Nuevos episodios, todos los
-            jueves cada 15 días.
-        </p>
-        <button class="button">CONOCÉ MÁS</button>
+        <nav class="nav" id="nav">
+            <a href="index.html"><img class="logo" src="assets/images/logo.svg" alt="Pale blue dot logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#episodios">Episodios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#entrevistas">Entrevistas</a></li>
+                <li><a href="#topicos">Tópicos</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro">
+            <h1>Hello <span class="world">world</span> pale blue dot <span class="dot">.</span></h1>
+            <p class="p1">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
+                episodios, todos los
+                jueves cada 15 días.
+            </p>
+            <button class="button">CONOCÉ MÁS</button>
+        </div>
     </header>
 
     <section id="episodios">
         <div class="ep">
             <h2>Episodios</h2><br>
             <div class="episodes">
-                <iframe src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                    allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                    allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD"
+                    allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ"
+                    allow="encrypted-media"></iframe>
             </div>
         </div>
     </section>
 
     <section id="nosotros">
         <div class="about">
-            <!-- <img src="assets/images/phone.png" alt="Phone"> -->
+            <img src="assets/images/phone.png" alt="Phone">
             <div class="text_nos">
                 <h2>De dónde venimos</h2>
                 <p>
-                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position
+                    in
                     the Universe, are challenged by this point of pale light.
+                </p>
+                <br>
+                <p>
                     Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
                     vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                 </p>
@@ -91,34 +98,53 @@
         <h2 class="tit_tema">Algunos de nuestros temas</h2>
         <div class="temas">
             <div class="topics">
-                <img  src="assets/images/icon1.svg" alt="">
-                <div class="descrip">Trabajo remoto</div>
+                <img src="assets/images/icon1.svg" alt="">
+                <div class="descrip">
+                    <span>Trabajo remoto</span>
+                </div>
             </div>
 
             <div class="topics">
                 <img class="t_img" src="assets/images/icon2.svg" alt="">
-                <div class="descrip">Repensando la programación</div>
+                <div class="descrip">
+                    <span>Repensando la programación</span>
+                </div>
             </div>
 
             <div class="topics">
                 <img class="t_img" src="assets/images/icon3.svg" alt="">
-                <div class="descrip">Bases del código</div>
+                <div class="descrip">
+                    <span>Bases del código</span>
+                </div>
             </div>
 
             <div class="topics">
                 <img class="t_img" src="assets/images/icon4.svg" alt="">
-                <div class="descrip">Seguridad informática</div>
+                <div class="descrip">
+                    <span>Seguridad informática</span>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="banner">
         <p>¿Querés las últimas novedades?</p>
-        <button id="button_d" class="button"><a href="#episodios"></a> Escucha los episodios</button>
+        <button id="button" class="button">Escuchá los episodios</button>
     </div>
 
     <footer>
-
+        <div class="footer">
+            <div class="copyright">
+                <span>© 2019— Hello blue pale dot</span>
+            </div>
+            <div class="social">
+                <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 

@@ -1,0 +1,92 @@
+@media (min-width: 500px) {
+  .about img {
+    transform: translate(15%, -25%);
+    z-index: 2;
+    width: 80%; } }
+@media (min-width: 1024px) {
+  .intro {
+    padding: 10% 10% 0% 13.9%; }
+    .intro h1 {
+      font-size: 4rem; }
+    .intro .p1 {
+      width: 39.2rem;
+      font-size: 1rem; }
+    .intro .dot {
+      color: #0000ec; }
+
+  .ep {
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    padding: 10% 5% 18% 5%; }
+    .ep h2 {
+      margin-left: 8.9%; }
+    .ep .episodes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 5%; }
+    .ep iframe {
+      width: 100%; }
+
+  .about {
+    display: flex;
+    margin-bottom: -10%; }
+    .about img {
+      margin-left: 8.9%;
+      z-index: 0;
+      width: 457.6px;
+      height: 660px; }
+    .about .text_nos {
+      margin: 5%;
+      margin-right: 11%;
+      color: #060a24;
+      padding: 5%; }
+
+  .interviews h2 {
+    margin-left: 8.9%; }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .gallery a {
+      padding: 0;
+      margin: 0; }
+    .gallery img {
+      margin-bottom: -2%;
+      width: 100%; }
+
+  .tit_tema {
+    margin-left: 8.9%; }
+
+  .temas {
+    padding: 0% 15.3% 0% 15.3%;
+    flex-direction: row;
+    justify-content: space-between; }
+    .temas .topics {
+      margin: 5%; }
+      .temas .topics .descrip {
+        margin-top: 0.7%;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center; }
+
+  .banner {
+    padding: 10%;
+    height: 13.2%;
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); }
+
+  .footer {
+    padding: 0.9%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .footer .copyright {
+      padding: 0.9% 0% 0.8% 14.7%;
+      align-content: center;
+      display: flex;
+      justify-content: flex-start; }
+    .footer .social {
+      padding: 0 0 0 43%; }
+      .footer .social a i {
+        margin-right: 2.25rem; } }
+
+/*# sourceMappingURL=media_queries.css.map */
